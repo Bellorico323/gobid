@@ -13,3 +13,6 @@ INSERT INTO products (
   $5
 )
 RETURNING id;
+
+-- name: GetProductById :one
+SELECT * FROM products WHERE id = $1;
